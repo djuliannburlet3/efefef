@@ -349,12 +349,12 @@ function checkRebus() {
   const r6 = document.getElementById('text-pas').value.trim().toLowerCase();
   const errorText = document.getElementById('error-text');
 
-  const cond1 = (r1 === "thé" || r1 === "the");
-  const cond2 = (r2 === "géniale" || r2 === "geniale" || r2 === "genial" || r2 === "génial");
+  const cond1 = (r1 === "thé" || r1 === "the || r1 === "Thé" || r1 === "The");
+  const cond2 = (r2 === "géniale" || r2 === "geniale" || r2 === "genial" || r2 === "génial" || r2 === "Géniale" || r2 === "Geniale");
   const cond3 = (r3 === "ne" || r3 === "noeud" || r3 === "nœud" || r3 === "noeuds" || r3 === "nœuds" || r3 === "neux" || r3 === "neuds");
-  const cond4 = (r4 === "changes" || r4 === "change" || r4 === "changer" || r4 === "changé");
-  const cond5 = (r5 === "surtout");
-  const cond6 = (r6 === "pas");
+  const cond4 = (r4 === "changes" || r4 === "change" || r4 === "changer" || r4 === "changé" || r4 === "Changer");
+  const cond5 = (r5 === "surtout" || r5 === "Surtout");
+  const cond6 = (r6 === "pas" || r6 === "Pas");
 
   if (cond1 && cond2 && cond3 && cond4 && cond5 && cond6) {
     errorText.style.display = "none";
